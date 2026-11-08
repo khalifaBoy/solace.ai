@@ -238,12 +238,7 @@ export default function LoginScreen() {
         <FadeInView delay={650}>
           <Pressable
             style={styles.forgot}
-            onPress={() =>
-              Alert.alert(
-                "Forgot password",
-                "Password recovery will be added later."
-              )
-            }
+            onPress={() => router.push("/(auth)/forgot-password")}
           >
             <Text style={styles.forgotText}>
               Forgot password?

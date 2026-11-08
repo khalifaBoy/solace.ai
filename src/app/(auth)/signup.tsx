@@ -141,10 +141,10 @@ export default function SignupScreen() {
       });
 
       showAlert(
-        "Success",
-        "Account created successfully!",
-        () => router.replace("/(auth)/login")
-      );
+      "Verify your email",
+      "Your account has been created. Please check your inbox and click the verification link before logging in.",
+      () => router.replace("/(auth)/login")
+    );
     } catch (error) {
       const errorMessage =
         error instanceof Error
